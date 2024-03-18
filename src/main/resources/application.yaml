@@ -18,3 +18,6 @@ spring:
     user:
       name: user
       password: user
+  jwt:
+    private.key: classpath:app.key
+    public.key: classpath:app.pub
