@@ -2,19 +2,17 @@ package cz.upce.fei.nnpia.cviceni.service;
 
 import cz.upce.fei.nnpia.cviceni.entities.AppUser;
 import cz.upce.fei.nnpia.cviceni.repository.AppUserRepository;
-import org.apache.catalina.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService implements ServiceI<AppUser> {
+public class AppUserService implements ServiceI<AppUser> {
 
     private final AppUserRepository appUserRepository;
 
-    public UserService(AppUserRepository appUserRepository) {
+    public AppUserService(AppUserRepository appUserRepository) {
         this.appUserRepository = appUserRepository;
     }
 

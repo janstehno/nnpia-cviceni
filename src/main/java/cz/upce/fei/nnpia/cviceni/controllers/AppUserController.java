@@ -1,7 +1,7 @@
 package cz.upce.fei.nnpia.cviceni.controllers;
 
 import cz.upce.fei.nnpia.cviceni.entities.AppUser;
-import cz.upce.fei.nnpia.cviceni.service.UserService;
+import cz.upce.fei.nnpia.cviceni.service.AppUserService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/app-user")
 public class AppUserController {
 
-    private final UserService service;
+    private final AppUserService service;
 
     @GetMapping()
     public List<AppUser> getAllAppUser() {
